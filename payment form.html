@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Info</title>
+    
+    <link rel="stylesheet" href="payinfo.css">
+  
+<!--  
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+      
+
+      }
+      body{
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 8px;
+        background-color: rgb(110, 107, 107);
+
+        
+      }
+
+ 
+     
+ 
+    .header{
+      text-align: center;
+      font-size: 24px;
+      background-color: rgba(13, 13, 13);
+      color: rgb(253, 220, 214);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 8px;
+     
+    }
+
+    .header a{
+      color: rgb(214, 45, 2);
+      text-decoration:none;
+      font-weight: 700;
+      
+      
+    }
+    .header a:hover{
+      color: rgb(248, 142, 3);
+      /* background-color: antiquewhite; */
+      padding: 4px;
+      border-radius: 4px;
+      box-shadow: 3px 4px 3px black;
+      
+    }
+
+    .container{
+      background-color: rgb(14, 14, 14);
+      border-radius: 8px;
+      padding: 5px;
+      margin: 5px;
+      font-size: 20px;
+     text-overflow: hidden;
+     
+     /* top: 50%;
+     left: 50%; */
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    
+    h1{
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+      margin-top: 20px;
+    }
+   h1 span {
+     text-align: center;
+     border-radius:8px;
+     padding: 5px;
+     margin: 3px;
+     color: aliceblue;
+     background-color: crimson;
+     box-shadow: rgb(24, 24, 24) 4px 5px 4px;
+   }
+   h1 span:hover{
+    color: black;
+     background-color: rgb(20, 113, 220);
+     box-shadow:rgb(5, 5, 5) 4px 5px 4px;
+   }
+   
+
+   h2{
+     text-align: center;
+     margin-top: 10px;
+    
+   }
+   h2 span{
+     /* color: aliceblue; */
+     background-color:sandybrown;
+     border-radius: 8px;
+     padding: 5px;
+  
+     box-shadow: rgb(12, 12, 12) 3px 5px 3px;
+   }
+   h2 span:hover{
+      color: aliceblue;
+     background-color: lightseagreen;
+     box-shadow: black 4px 6px 4px;
+    
+   }
+
+   label{
+    color: aliceblue;
+    margin-left: 10px;
+   }
+
+   fieldset{
+      border: 0px;
+      
+    }
+
+   .box{
+     
+     width: 450px;
+     text-decoration: none;
+     margin-top: 8px;
+
+    }
+ 
+    .box-2{
+      text-align: center;
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: 3px;
+      border-radius: 6px;
+     border: 0px;
+      color: rgb(5, 5, 5);
+      background-color: rgb(212, 212, 204);
+      margin-left: 5px;
+      
+    }
+
+    .box .box-3{
+      text-align: center;
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 600;
+      border: 0px;
+      margin-left: 24px;
+      margin-bottom: 4px;
+
+    }
+    .box-3{
+      text-align: center;
+      padding: 5px;
+      width: 150px;
+      border-radius: 6px;
+      background-color: cadetblue;
+      cursor: pointer;
+      box-shadow: rgb(10, 10, 10) 4px 6px 4px;
+    }
+    .box-3:hover{
+      background-color: rgb(0, 233, 124)
+     
+    }
+  
+    h3 span{
+      text-align: center;
+      font-size: 28px;
+      color: antiquewhite;
+     animation: magic 4s infinite ease-in-out;
+     animation-delay: 2s;
+    }
+
+    @keyframes magic{
+
+      0%{
+        color: rgb(0, 119, 119);
+        letter-spacing: 1px;
+        /* margin-left: 23px; */
+      }
+      45%{
+        color: springgreen;
+        letter-spacing: 2px;
+        margin: 20px;
+        opacity: 1;
+
+      }
+      75%{
+        color: rgb(248, 142, 3);
+        opacity: 1;
+        letter-spacing: 1px;
+      }
+      100%{
+        color: aliceblue;
+        opacity: 1;
+        letter-spacing: 0px;
+      }
+    }
+    h3 span:hover{
+      color: rgb(6, 117, 207);
+      padding: 4px;
+      border-radius: 4px;
+      box-shadow: 4px 5px 4px black;
+    }
+
+
+   footer{
+    text-align: center;
+     font-size: 20px;
+     background-color: rgb(12, 12, 12);
+     padding: 30px;
+     border-radius: 8px;
+     color: rgb(250, 219, 209);
+
+
+   }
+   .box-5{
+    text-align: center;
+    margin-top:20px;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+     color:rgb(238, 48, 1);
+     text-decoration: none;
+
+
+   }
+   .box-5:hover{
+     color: rgb(236, 182, 2);
+     cursor: pointer;
+     /* background-color: whitesmoke; */
+     padding: 4px;
+     box-shadow: 4px 5px 4px black;
+     border-radius: 6px;
+   }
+   h4{
+     font-size: 38px;
+     padding-left: 40%;
+     margin: 7px;
+     color: rgb(165, 1, 1);
+     text-shadow: black 5px 4px 3px;
+     font-weight: 600;
+   }
+       
+
+    @media  screen and (max-width:600px) {
+      
+      .header{
+      text-align: center;
+      font-size: 16px;
+      background-color: rgb(12, 12, 12);
+      color: rgb(237, 255, 229);
+      padding: 8px;
+      border-radius: 6px;
+      margin: 5px;
+     
+    }
+
+    .header a{
+      color: rgb(214, 45, 2);
+      text-decoration:none;
+      font-weight: 600;
+      
+      
+    }
+    .header a:hover{
+      color: rgb(248, 142, 3);
+      /* background-color: antiquewhite; */
+      padding: 3px;
+      border-radius: 4px;
+      box-shadow: 3px 4px 3px black;
+      
+    }  
+    .container{
+      background-color: rgb(14, 14, 14);
+      border-radius: 6px;
+      padding: 4px;
+      margin: 3px;
+      font-size: 12px;
+     text-overflow: hidden;
+     
+     /* top: 50%;
+     left: 50%; */
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    
+    h1{
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 25px;
+      margin-top: 15px;
+    }
+   h1 span {
+     text-align: center;
+     border-radius:5px;
+     padding: 5px;
+     margin: 3px;
+     color: aliceblue;
+     background-color: crimson;
+     box-shadow: rgb(24, 24, 24) 3px 4px 3px;
+   }
+   h1 span:hover{
+    color: black;
+     background-color: rgb(20, 113, 220);
+     box-shadow:rgb(5, 5, 5) 3px 4px 3px;
+   }
+   
+   label{
+    color: aliceblue;
+    margin-left: 5px;
+   }
+
+
+   .box{
+     
+     width: 250px;
+     text-decoration: none;
+     margin-top: 5px;
+
+    }
+ 
+    .box-2{
+      text-align: center;
+      font-size: 13px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: 3px;
+      border-radius: 5px;
+     border: 0px;
+      color: rgb(5, 5, 5);
+      background-color: rgb(212, 212, 204);
+      margin-left: 7px;
+      text-decoration: none;
+      
+    }
+
+    /* .box p{
+      color:aliceblue;
+      background-color: aliceblue;
+    } */
+
+    fieldset{
+      border: 0px;
+      
+    }
+
+
+    .box .box-3{
+      text-align: center;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 600;
+      border: 0px;
+      margin-left: 20px;
+      margin-bottom: 4px;
+
+    }
+    .box-3{
+      text-align: center;
+      padding: 4px;
+      width: 90px;
+      border-radius: 5px;
+      background-color: cadetblue;
+      cursor: pointer;
+      box-shadow: rgb(10, 10, 10) 4px 6px 4px;
+      
+    }
+    .box-3:hover{
+      background-color: rgb(0, 233, 124)
+     
+    }
+
+
+    h3 span{
+      text-align: center;
+      font-size: 22px;
+      color: antiquewhite;
+     animation: magic 4s infinite ease-in-out;
+     animation-delay: 2s;
+    }
+
+    @keyframes magic{
+
+      0%{
+        color: rgb(0, 119, 119);
+        letter-spacing: 0px;
+        /* margin-left: 23px; */
+      }
+      45%{
+        color: springgreen;
+        letter-spacing: 1px;
+        margin: 9px;
+        opacity: 1;
+
+      }
+      75%{
+        color: rgb(248, 142, 3);
+        opacity: 1;
+        letter-spacing: 1px;
+      }
+      100%{
+        color: aliceblue;
+        opacity: 1;
+        letter-spacing: 0px;
+      }
+    }
+    h3 span:hover{
+      color: rgb(6, 117, 207);
+      padding: 4px;
+      border-radius: 4px;
+      box-shadow: 4px 5px 4px black;
+    }
+
+
+
+   footer{
+    text-align: center;
+     font-size: 15px;
+     background-color: rgb(12, 12, 12);
+     padding: 20px;
+     border-radius: 6px;
+     color: rgb(250, 219, 209);
+     margin-top: 6px;
+     /* margin-bottom: 8px; */
+     /* margin: 6px; */
+
+
+   }
+   .box-5{
+    text-align: center;
+    margin-top:18px;
+    /* margin: 5px; */
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+     color:rgb(238, 48, 1);
+     text-decoration: none;
+
+
+   }
+   .box-5:hover{
+     color: rgb(236, 182, 2);
+     cursor: pointer;
+     /* background-color: whitesmoke; */
+     padding: 4px;
+     box-shadow: 4px 5px 4px black;
+     border-radius: 6px;
+   }
+   h4{
+     font-size: 28px;
+     padding-left: 25%;
+     margin: 4px;
+     color: rgb(165, 1, 1);
+    
+     text-shadow: black 5px 4px 3px;
+   }
+    
+
+    }
+   
+
+    
+    </style> -->
+      
+    
+   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+
+ 
+  <div class="header">
+  <ion-icon name="home"></ion-icon>
+  <a href="#">Home</a>&nbsp;&nbsp;&nbsp;
+  <ion-icon name="person-add"></ion-icon>
+  <a href="#">Service</a>&nbsp;&nbsp;&nbsp;
+  <ion-icon name="cloud-download"></ion-icon>
+  <a href="#">Download</a>&nbsp;&nbsp;&nbsp;
+  <ion-icon name="newspaper"></ion-icon>
+  <a  href="#">Latest news</a>&nbsp;&nbsp;&nbsp;
+  <ion-icon name="log-in-outline"></ion-icon>
+  <a href="#">Log in</a>&nbsp;&nbsp;&nbsp;
+
+</div>
+
+ 
+  <!-- </div> -->
+
+  <div class="container">
+
+    <!-- <form action="dicegame.html"> -->
+    <h1><span> Payment form</span></h1>
+    <!-- <br> -->
+    <!-- <br> -->
+    <h2><span> Contact information </span> </h2>
+    <br>
+    <div class="box">
+        <label> Name*</label>
+        <input class="box-2" type=" name" placeholder="Name" id="text" >
+  
+    </div>
+    <br>
+
+    <div class="box">
+    
+       <fieldset>
+        <label> Gender*</label>
+        <br>
+        <label >male :</label>
+            <input class="box-2" type="radio" placeholder="Male" id="gender">
+            <label >female :</label>
+            <input class="box-2" type="radio" placeholder="Female" id="gender">
+          
+       </fieldset>
+    </div>
+    <br>
+
+    <div class="box">
+        <label> Address*</label>
+        <input  class="box-2" type=" textarea" placeholder=" Address" id="Address" rows="50" colums="67">
+  
+    </div>
+    <br>
+    <div class="box">
+        <label> Pincode*</label>
+        <input class=" box-2"type=" number" placeholder=" Pincode" id="Pincode">
+  
+    </div>
+    <br>
+
+  <div class="box">
+      <label> Email*</label>
+      <input class="box-2" type=" email" placeholder="Email id " id="username">
+
+  </div>
+  <br>
+  <div class="box">
+      <label>Password* </label>
+      <input class=" box-2"type="password" name="confirm password" placeholder="Password" id="password" >
+      
+  </div>
+
+<br>
+
+  
+  <div class="box">
+      <label> Confirm password* </label>
+      <input class =" box-2" type="password"  name="confirm password" placeholder=" Confirm Password" id="confirm_password" >
+      <p id="message">Demo text</p>
+  </div>
+
+  <br>
+  <div class="box">
+    
+    <!-- <input class="box-3"type="button" placeholder="processed" id="btnlog" onclick="myname()" > -->
+    <button class="box-3" id="btnlog" onclick="myname()">processed</button>
+    
+</div>
+
+<!-- </form> -->
+
+<br>
+  <h2> <span> Payment information </span> </h2>
+   
+  <br>
+    <div class="box">
+        <label> Card type*</label>
+       <select class="box-2" name="card type" id="card_type">
+       <option value="">--select your card type--</option>
+           <option value="visa">visa</option>
+           <option value="rupay">rupay</option>
+           <option value="smartcard">smartcard</option>
+       </select>
+ 
+    </div>
+    <br>
+    <div class="box">
+      <label>Card number*</label>
+      <input class="box-2" type="number" placeholder="card number" value="number" id="cardno" >
+      
+  </div>
+  <br>
+  <div class="box">
+    <label>Expiration date*</label>
+    <input class="box-2"type="date" placeholder="date" value="number" id="Expriydate" >
+    
+</div>
+<br>
+<div class="box">
+  <label>CVV*</label>
+  <input class="box-2"type="password" placeholder="cvv" value="cvv" id="cvv">
+  
+</div>
+<br>
+<div class="box"> 
+ 
+  <input class=" box-3"  id="abc" type="button" placeholder="submit" value="submit" >
+  
+</div>
+</div>
+
+<footer>
+   <h3><span> Follow Us On Social Media</span></h3>
+   <br>
+  <ion-icon name="logo-google"></ion-icon>
+  <a class="box-5"href="https://www.google.com">Google</a>&nbsp;&nbsp;&nbsp;
+  <ion-icon name="logo-facebook"></ion-icon>
+  <a class="box-5"href="https://www.facebook.com">facebook</a>&nbsp;&nbsp;&nbsp;
+  <ion-icon name="logo-twitter"></ion-icon>
+  <a class="box-5" href="https://www.Twitter.com">Twitter</a>  &nbsp;&nbsp;&nbsp;
+  <ion-icon name="help-circle-outline"></ion-icon>
+  <a class="box-5"href="#">Help</a> &nbsp;&nbsp;&nbsp;
+  <ion-icon name="help-circle-outline"></ion-icon>
+  <a class="box-5"href="#">FAQ</a>&nbsp;&nbsp;&nbsp;
+  <ion-icon name="albums-outline"></ion-icon>
+  <a class="box-5"href="#">Download boucher</a>
+
+
+</footer>
+
+     <h4><i>Thank you!</i></h4>
+
+     <script src="payinfo.js"></script>
+
+     
+     
+    <script>
+
+
+
+    //  // change in headings..//
+    //  document.querySelector("h2 span").innerHTML="Application Form";
+
+    //  // Button chnages //
+    //  document.querySelector(".box-3").innerHTML="Login";
+    //  document.querySelector(".box-3").style.color="darkred";
+
+    //  // CONFIRM PASSWORD MESSAGE CHANGES //
+    //  document.querySelector("#message").innerHTML="";
+    //  document.querySelector("#message").style.color="white";
+    //  document.querySelector("#message").style.margin="20px 10px";
+    //  document.querySelector("#message").style.fontSize="18px";
+
+    // //  document.getElementsByClassName(".message").innerHTML="wrong pass";
+
+    //  // All Field are Required case //
+    //  function myname(){
+    //    var Name=document.getElementById("text").value;
+
+    //    var Gen=document.getElementById("gender").value;
+
+    //    var Add=document.getElementById("Address").value;
+
+    //    var Pin=document.getElementById("Pincode").value;
+
+    //    var user=document.getElementById("username").value;
+
+    //    var pass=document.getElementById("password").value;
+
+    //    var confirmpass=document.getElementById("confirm_password").value;
+
+
+    //   //  if(Name=="" || Gen=="" || Add=="" || Pin=="" || user=="" || pass=="" || confirmpass==""){
+    //   //   // alert("All Field are Requried");
+    //   //    alert("Please Enter Name");
+    //   //    return false;
+
+    //   //  }else{
+    //   //   return true;
+    //   //  }
+          
+    //   if(Name==""){
+    //     alert("Please Enter Name");
+    //     return false;
+    //   }else if(Gen==""){
+    //     alert("Please Enter Gender");
+    //     return false;
+    //   }else if(Add==""){
+    //     alert("Please Enter Add");
+    //     return false;
+    //   }else if(Pin==""){
+    //     alert("Please Enter Pincode");
+    //     return false;
+    //   }else if(user==""){
+    //     alert("Please Enter Username");
+    //     return false;
+
+    //   } else if(pass==""){
+    //     alert("Please Enter Password");
+    //     return false ;
+
+    //   }else if(confirmpass==""){
+    //     alert("Please Enter Confirm Password");
+    //     return false;
+    //   }
+      
+    //   else {
+    //     return true;
+    //   }
+       
+    // }  
+  
+      
+    // /* PASSWORD CONFIRM OR NOT PART CHANGES */
+     
+    // document.querySelector(".box-3").addEventListener("click" , function(){
+      
+    //   var Passs1=document.getElementById("password").value;
+    //   var Passs2=document.getElementById("confirm_password").value;
+    //   var msg=document.getElementById("message");
+
+    //  if(Passs1!=0){
+    //   if(Passs1!=Passs2){
+    //     msg.innerHTML="Password does not Matched";
+    //     msg.style.color="red";
+    //     return false;
+    //   }
+   
+    //   else {
+    //     msg.innerHTML="Password  matched";
+    //     msg.style.color="lightgreen";
+    //     return true;
+    //   }
+    // }   
+
+    // })
+
+
+    // /* Payment form changes */
+
+    // document.getElementById("card_type").style.backgroundColor="white";
+
+    
+    //   document.querySelector("#abc").addEventListener("click" , function(){
+      
+
+    //   var card=document.getElementById("card_type").value;
+
+    //   var cardNo=document.getElementById("cardno").value;
+
+    //   var Expiry=document.getElementById("Expriydate").value;
+
+    //   var Cvv=document.getElementById("cvv").value;
+      
+
+    //   if(card=="" || cardNo=="" || Expiry=="" || Cvv=="" ){
+    //     alert("All Field are Requried ");
+    //     return false ;
+    //   }else {
+    //     return true;
+
+
+    //   }
+  
+
+     
+    // })
+     
+
+     </script> 
+
+     
+</body>
+</html>
